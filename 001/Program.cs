@@ -2,7 +2,18 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16*/
 Console.WriteLine ("add number A");
-int A = int.Parse(Console.ReadLine()!);
+int A = Convert.ToInt32(Console.ReadLine()!);
 Console.WriteLine ("add number B");
-int B = int.Parse(Console.ReadLine()!);
-Console.WriteLine($"A^B= " + Math.Pow(A,B));
+int B = Convert.ToInt32(Console.ReadLine()!);
+//Console.WriteLine($"A^B= " + Math.Pow(A,B));
+
+int metod (int A, int B)
+    {
+     int i = Convert.ToInt32(Math.Pow(A,B));  
+     return i;    
+    }
+    int Stepen = metod (A, B);
+Console.WriteLine($"значение {A} в степени {B} = {Stepen}");
+
+
+
