@@ -2,16 +2,21 @@
 452 -> 11
 82 -> 10
 9012 -> 12*/
+
 Console.WriteLine("ADD number");
-int i = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
+int number = Convert.ToInt32(Console.ReadLine());
 
-for (int number; i > 0; )
+int sum (int number)
     {
-        number = i % 10;
-            i= i / 10;
-        sum = sum + number;
+        int converter = Convert.ToInt32(number);
+        int resultat = 0 ;
+        for (int d = 1;d <= converter; d++)
+        {
+            resultat += d;
+            
+        }
+       return resultat;
     }
-
-Console.WriteLine("sum numbers:= " + sum);
+int Summa = sum (number);
+Console.WriteLine(Summa);
 
